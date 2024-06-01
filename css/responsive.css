@@ -1,0 +1,155 @@
+@media(max-width:576px) {
+    html {
+        font-size: 13px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .container {
+        padding: 3rem;
+    }
+
+    .nav-responsive {
+        display: flex;
+    }
+
+    .home-flex {
+        gap: 5rem;
+    }
+
+    .home-img {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .home-head{
+        font-size: 4rem;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .line {
+        width: 300px;
+    }
+
+    .contact-flex {
+        gap: 5rem;
+    }
+
+    .contact-img {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .contact-info {
+        padding-top: 3rem;
+    }
+}
+
+@media(min-width: 576px) and (max-width:768px) {
+    html {
+        font-size: 13px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: flex;
+    }
+
+    .home-flex {
+        gap: 5rem;
+    }
+
+    .home-img {
+        width: 60vh;
+        height: 60vh;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .line {
+        width: 5%;
+    }
+
+    .contact-flex {
+        gap: 5rem;
+    }
+
+    .contact-img {
+        width: 60vh;
+        height: 60vh;
+    }
+
+    .contact-info {
+        padding-top: 3rem;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:996px) {
+    html {
+        font-size: 14px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: flex;
+    }
+
+    .home-flex {
+        gap: 5rem;
+    }
+
+    .home-img {
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .line {
+        width: 200px;
+    }
+
+    .contact-flex {
+        gap: 5rem;
+    }
+
+    .contact-img {
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .contact-info {
+        padding-top: 3rem;
+    }
+
+}
+
+@media(min-width:996px) {
+    html {
+        font-size: 15px;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+}

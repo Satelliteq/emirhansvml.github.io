@@ -1,0 +1,462 @@
+::selection {
+  background-color: #000000; /* Arkaplan rengini değiştirin */
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+body,html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  transition: top 0.3s ease-in-out;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  background-color: #fff;
+  animation: slidedown 0.4s forwards;
+}
+
+@keyframes slidedown {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0;
+    box-shadow: 0 2px 8px 0 #ddd;
+  }
+}
+
+.contain {
+  padding: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.container {
+  padding: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem
+}
+
+.nav-responsive {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem
+}
+
+
+/* Add this to your existing CSS */
+
+/* Keyframes for sliding the menu from right to left */
+@keyframes slideInRight {
+  0% {
+    right: -100%;
+  }
+
+  
+  100% {
+    right: 0%;
+  }
+}
+
+/* Keyframes for sliding the menu from left to right */
+@keyframes slideOutRight {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+/* Base nav-menu styling */
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  z-index: 1000000;
+  display: none;
+  padding: 3rem;
+  padding-top: 3rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+/* Apply slide-in animation when the menu is opening */
+.nav-menu.open {
+  display: flex;
+  animation: slideInRight 0.5s cubic-bezier(0.5, 0, 1, 1) forwards;
+}
+
+/* Apply slide-out animation when the menu is closing */
+.nav-menu.close {
+  animation: slideOutRight 0.5s cubic-bezier(0.5, 0, 1, 1) forwards;
+}
+
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-menu ul li a{
+  font-size:3rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-menu ul li a:hover {
+  opacity: #797979;
+}
+
+.menu-icon {
+  background: url(../pictures/menu_6367992.png);
+  background-size: cover;
+  background-position: center;
+  height: 3vh;
+  width: 3vh;
+  cursor: pointer;
+}
+
+.menu-icons {
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+
+.instagram {
+  background: url(../pictures/instagram_717392.png);
+  background-size: cover;
+  background-position: center;
+  width: 4vh;
+  height: 4vh;
+}
+.github {
+  background: url(../pictures/github_733609.png);
+  background-size: cover;
+  background-position: center;
+  width: 4vh;
+  height: 4vh;
+}
+.linkedin {
+  background: url(../pictures/linkedin_3992560.png);
+  background-size: cover;
+  background-position: center;
+  width: 4vh;
+  height: 4vh;
+  
+}
+
+.close-icon {
+  background: url(../pictures/cancel_11081448.png);
+  background-size: cover;
+  background-position: center;
+  height: 3vh;
+  width: 3vh;
+  cursor: pointer;
+}
+
+.logo-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+
+.btn-nav {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-nav a {
+  padding: 0.5rem 1rem;
+}
+
+.btn-nav:hover {
+  opacity: 0.7;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+
+.home-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+.home-img {
+  background: url(../pictures/bwink_edu_01_single_02.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 90vh;
+}
+
+.home-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.home-head {
+  font-size: 7rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.home-p {
+  opacity: 0.5;
+  font-size: 1.25rem;
+}
+
+
+/* ABOUT */
+.about {
+  padding-top: 10rem;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+
+.atxt-head {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  padding-bottom: 2rem;
+}
+
+.atxt-p {
+  opacity: 0.5;
+  flex: 40%;
+  padding-top: 1rem;
+}
+
+.about-info {
+  flex: 40%;
+}
+
+.talents-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.talent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0.5px solid #efefef;
+}
+
+.talent-icon img{
+  height: 40px;
+}
+
+.talent-p {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  opacity: 0.7;
+}
+
+.contact {
+  margin-top: 10rem;
+}
+
+.contact-head {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+.contact-flex {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+
+.line {
+  width: 600px;
+  height: 2px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ct-hd {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.ct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ct a {
+  color: #000;
+}
+
+.contact-img {
+  background: url(../pictures/bwink_ppl_05_single_08.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 80vh;
+}
+
+.link-icon-img {
+  background: url(../pictures/external-link_7268615.png);
+  height: 4vh;
+  width: 4vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  margin: 3rem;
+}
+
+.foot-flex {
+  margin: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot-logo img{
+  height: 100px;
+  width: 100px;
+}
+
+.foot-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
