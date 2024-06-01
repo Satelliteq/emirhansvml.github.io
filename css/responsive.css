@@ -7,12 +7,6 @@
         display: none;
     }
 
-    .header .container {
-        padding: 2rem;
-        padding-top: 1rem;
-        paddign-bottom: 1rem;
-    }
-
     .nav-responsive {
         display: flex;
     }
