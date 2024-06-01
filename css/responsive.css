@@ -11,6 +11,9 @@
         padding: 3rem;
     }
 
+    .header .container {
+        padding: 1rem;
+
     .nav-responsive {
         display: flex;
     }
