@@ -3,6 +3,16 @@
         font-size: 13px;
     }
 
+    .container {
+        padding: 3rem;
+    }
+
+    .header .container {
+        padding: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
     .nav {
         display: none;
     }
