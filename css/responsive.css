@@ -54,6 +54,15 @@
     .contact-info {
         padding-top: 3rem;
     }
+
+    
+    .link-icon-img {
+      background: url(../pictures/external-link_7268615.png);
+      height: 3vh;
+      width: 3vh;
+      background-size: cover;
+      background-position: center;
+    }
 }
 
 @media(min-width: 576px) and (max-width:768px) {
