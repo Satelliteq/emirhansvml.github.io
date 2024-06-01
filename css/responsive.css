@@ -66,11 +66,7 @@
     .nav-responsive {
         display: flex;
     }
-
-    .home-flex {
-        gap: 5rem;
-    }
-
+   
     .home-img {
         width: 60vh;
         height: 60vh;
