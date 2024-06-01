@@ -12,7 +12,10 @@
     }
 
     .header .container {
-        padding: 1rem;
+        padding: 2rem;
+        padding-top: 1rem;
+        paddign-bottom: 1rem;
+        
     }
 
     .nav-responsive {
